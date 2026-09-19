@@ -1,0 +1,13 @@
+services:
+  python-api:
+    build: ./services/python-api
+    ports:
+      - "8000:8000"
+  java-api:
+    build: ./services/java-api
+    ports:
+      - "8080:8080"
+  go-api:
+    build: ./services/go-api
+    ports:
+      - "8081:8081"
